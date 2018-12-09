@@ -71,7 +71,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |---------------------------------------------------------------|
    * |     |   |MS1|MS2|MS3|   |   |   |Up |MA0|   |   |   |     |   |
    * |---------------------------------------------------------------|
-   * |      |MSL|MSD|MSU|MSR|   |   |Lef|Dow|Rig|MA1|   |        |Ply|
+   * |      |MSL|MSD|MSU|MSR|   |   |Lef|Dow|Rig|MA1|MA2|        |Ply|
    * |---------------------------------------------------------------|
    * |        |MWL|MWD|MWU|MWR|   |MS1|MS2|MS3|MS4|MS5|      |PgU|Mut|
    * |---------------------------------------------------------------|
@@ -81,7 +81,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_FN] = LAYOUT_truefox( \
       _______ , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , _______ , _______ , _______ , \
       _______ , _______ , KC_BTN1 , KC_BTN2 , KC_BTN3 , _______ , _______ , _______ , KC_UP   , KC_ACL0 , _______ , _______ , _______ , _______           , _______ , \
-      _______ , KC_MS_L , KC_MS_D , KC_MS_U , KC_MS_R , _______ , _______ , KC_LEFT , KC_DOWN , KC_RGHT , KC_ACL1 , _______ , _______                     , KC_MPLY , \
+      _______ , KC_MS_L , KC_MS_D , KC_MS_U , KC_MS_R , _______ , _______ , KC_LEFT , KC_DOWN , KC_RGHT , KC_ACL1 , KC_ACL2 , _______                     , KC_MPLY , \
       _______           , KC_WH_L , KC_WH_D , KC_WH_U , KC_WH_R , _______ , KC_BTN1 , KC_BTN2 , KC_BTN3 , KC_BTN4 , KC_BTN5 , _______           , KC_PGUP , KC_MUTE , \
       _______           , _______ , _______ , _______                                                             , _______ , _______ , KC_HOME , KC_PGDN , KC_END  \
       ),
