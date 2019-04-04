@@ -52,17 +52,17 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |---------------------------------------------------------------|
    * |Es/Ctl|  A|  O|  E|  U|  I|  D|  H|  T|  N|  S|  -|Enter   |VoU|
    * |---------------------------------------------------------------|
-   * |Shift   |  ;|  Q|  J|  K|  X|  B|  M|  W|  V|  Z|Fn2   |Up |VoD|
+   * |Shift   |  ;|  Q|  J|  K|  X|  B|  M|  W|  V|  Z|      |Up |VoD|
    * |---------------------------------------------------------------|
-   * |Fn1 |Alt |Gui |         Space         |Gui |Alt |  |Lef|Dow|Rig|
+   * |Fn1 |Alt |Gui |         Space         |Gui |Fn2 |  |Lef|Dow|Rig|
    * `---------------------------------------------------------------'
    */
   [_DEFAULT] = LAYOUT_truefox( \
       KC_GRV         , KC_1    , KC_2    , KC_3   , KC_4  , KC_5  , KC_6  , KC_7  , KC_8  , KC_9 , KC_0 , KC_LBRC , KC_RBRC , KC_BSLS , XXXXXXX , KC_PSCR , \
       KC_TAB         , KC_QUOT , KC_COMM , KC_DOT , KC_P  , KC_Y  , KC_F  , KC_G  , KC_C  , KC_R , KC_L , KC_SLSH , KC_EQL  , KC_BSPC           , KC_DEL  , \
       CTL_T(KC_ESC)  , KC_A    , KC_O    , KC_E   , KC_U  , KC_I  , KC_D  , KC_H  , KC_T  , KC_N , KC_S , KC_MINS , KC_ENT                      , KC_VOLU , \
-      KC_LSFT                  , KC_SCLN , KC_Q   , KC_J  , KC_K  , KC_X  , KC_B  , KC_M  , KC_W , KC_V , KC_Z    , MO(_FN2)          , KC_UP   , KC_VOLD , \
-      MO(_FN)        , KC_LALT , KC_LGUI , KC_SPC                                                       , KC_RGUI , KC_RALT , KC_LEFT , KC_DOWN , KC_RGHT \
+      KC_LSFT                  , KC_SCLN , KC_Q   , KC_J  , KC_K  , KC_X  , KC_B  , KC_M  , KC_W , KC_V , KC_Z    , XXXXXXXX          , KC_UP   , KC_VOLD , \
+      MO(_FN)        , KC_LALT , KC_LGUI , KC_SPC                                                       , KC_RGUI , MO(_FN2), KC_LEFT , KC_DOWN , KC_RGHT \
       ),
 
   /* Function layer 1. The main function layer, with mousekeys, function keys, etc.
@@ -90,20 +90,20 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,---------------------------------------------------------------.
    * |   |   |   |   |   |   |   |   |   |   |   |   |   |   |Wak|   |
    * |---------------------------------------------------------------|
-   * |     |   |   |   |   |   |   |   |   |   |   |   |   |     |   |
+   * |     |  `|   |   |   |   |   |   |   |  [|  ]|  \|   |     |   |
    * |---------------------------------------------------------------|
-   * |Caps  |   |   |MVP|MVN|   |   |   |   |   |MVW|   |        |Prv|
+   * |Caps  |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|   |        |Prv|
    * |---------------------------------------------------------------|
-   * |        |   |   |   |   |   |   |   |   |   |   |      |   |Nxt|
+   * |        |   |   |MVP|MVN|   |   |   |MVW|   |   |      |   |Nxt|
    * |---------------------------------------------------------------|
    * |    |    |    |                       |    |    |  |   |   |   |
    * `---------------------------------------------------------------'
    */
   [_FN2] = LAYOUT_truefox( \
       _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , KC_WAKE , _______ , \
-      _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______           , _______ , \
-      KC_CAPS , _______ , _______ , EL_VMBP , EL_VMBN , _______ , _______ , _______ , _______ , _______ , EL_VMBW , _______ , _______                     , KC_MPRV , \
-      _______           , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______           , _______ , KC_MNXT , \
+      _______ , KC_GRV  , _______ , _______ , _______ , _______ , _______ , _______ , _______ , KC_LBRC , KC_RBRC , KC_BSLS , _______ , _______           , _______ , \
+      KC_CAPS , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , _______ , _______                     , KC_MPRV , \
+      _______           , _______ , _______ , EL_VMBP , EL_VMBN , _______ , _______ , _______ , EL_VMBW , _______ , _______ , _______           , _______ , KC_MNXT , \
       _______           , _______ , _______ , _______                                                             , _______ , _______ , _______ , _______ , _______  \
       ),
 };
