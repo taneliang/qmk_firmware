@@ -37,14 +37,6 @@ static uint8_t        mousekey_accel  = 0;
 static uint8_t        mousekey_repeat = 0;
 static uint16_t       last_timer      = 0;
 
-#ifndef MK_3_SPEED
-
-/*
- * Mouse keys  acceleration algorithm
- *  http://en.wikipedia.org/wiki/Mouse_keys
- *
- *  speed = delta * max_speed * (repeat / time_to_max)**((1000+curve)/1000)
- */
 /* milliseconds between the initial key press and first repeated motion event (0-2550) */
 uint8_t mk_delay = MOUSEKEY_DELAY / 10;
 /* milliseconds between repeated motion events (0-255) */
@@ -59,6 +51,14 @@ uint8_t mk_time_to_max = MOUSEKEY_TIME_TO_MAX;
 uint8_t mk_wheel_max_speed   = MOUSEKEY_WHEEL_MAX_SPEED;
 uint8_t mk_wheel_time_to_max = MOUSEKEY_WHEEL_TIME_TO_MAX;
 
+#ifndef MK_3_SPEED
+
+/*
+ * Mouse keys  acceleration algorithm
+ *  http://en.wikipedia.org/wiki/Mouse_keys
+ *
+ *  speed = delta * max_speed * (repeat / time_to_max)**((1000+curve)/1000)
+ */
 static uint8_t move_unit(void) {
     uint16_t unit;
     if (mousekey_accel & (1 << 0)) {
