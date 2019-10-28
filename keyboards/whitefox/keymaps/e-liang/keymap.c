@@ -57,7 +57,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,---------------------------------------------------------------.
    * |  `|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  [|  ]|  \|   |Prt|
    * |---------------------------------------------------------------|
-   * |Tab  |  '|  ,|  .|  P|  Y|  F|  G|  C|  R|  L|  /|  =|Backs|Del|
+   * |Tb/Cm|  '|  ,|  .|  P|  Y|  F|  G|  C|  R|  L|  /|  =|Backs|Del|
    * |---------------------------------------------------------------|
    * |Es/Ctl|  A|  O|  E|  U|  I|  D|  H|  T|  N|  S|  -|Enter   |VoU|
    * |---------------------------------------------------------------|
@@ -68,7 +68,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
   [_DEFAULT] = LAYOUT_truefox( \
       KC_GRV         , KC_1    , KC_2    , KC_3   , KC_4  , KC_5  , KC_6  , KC_7  , KC_8  , KC_9 , KC_0 , KC_LBRC , KC_RBRC , KC_BSLS , XXXXXXX , KC_PSCR , \
-      KC_TAB         , KC_QUOT , KC_COMM , KC_DOT , KC_P  , KC_Y  , KC_F  , KC_G  , KC_C  , KC_R , KC_L , KC_SLSH , KC_EQL  , KC_BSPC           , KC_DEL  , \
+      LGUI_T(KC_TAB) , KC_QUOT , KC_COMM , KC_DOT , KC_P  , KC_Y  , KC_F  , KC_G  , KC_C  , KC_R , KC_L , KC_SLSH , KC_EQL  , KC_BSPC           , KC_DEL  , \
       CTL_T(KC_ESC)  , KC_A    , KC_O    , KC_E   , KC_U  , KC_I  , KC_D  , KC_H  , KC_T  , KC_N , KC_S , KC_MINS , KC_ENT                      , KC_VOLU , \
       KC_LSFT                  , KC_SCLN , KC_Q   , KC_J  , KC_K  , KC_X  , KC_B  , KC_M  , KC_W , KC_V , KC_Z    , MO(_FN2)          , KC_UP   , KC_VOLD , \
       MO(_FN)        , KC_LALT , KC_LGUI , KC_SPC                                                       , KC_RGUI , MO(_FN3), KC_LEFT , KC_DOWN , KC_RGHT \
