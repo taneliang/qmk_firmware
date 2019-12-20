@@ -94,7 +94,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______ , KC_A    , KC_S    , KC_D    , KC_F    , KC_G    , KC_H    , KC_J    , KC_K    , KC_L    , KC_SCLN , KC_QUOT , _______                          , _______ , \
       _______           , KC_Z    , KC_X    , KC_C    , KC_V    , KC_B    , KC_N    , KC_M    , KC_COMM , KC_DOT  , KC_SLSH , _______           , _______      , _______ , \
       _______           , _______ , _______ , _______                                                             , _______ , _______ , _______ , _______      , _______ \
-      ),
+  ),
 
   /* Function layer 1. The main function layer, with mousekeys, function keys, etc.
    * ,---------------------------------------------------------------.
@@ -115,7 +115,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______ , KC_MS_L , KC_MS_D , KC_MS_U , KC_MS_R , _______ , _______ , KC_LEFT , KC_DOWN , KC_RGHT , KC_ACL2 , _______ , _______                     , KC_MPLY , \
       _______           , KC_WH_L , KC_WH_D , KC_WH_U , KC_WH_R , _______ , KC_BTN2 , KC_BTN3 , _______ , KC_BTN4 , KC_BTN5 , _______           , KC_PGUP , KC_MUTE , \
       _______           , _______ , _______ , KC_BTN1                                                             , _______ , _______ , KC_HOME , KC_PGDN , KC_END  \
-      ),
+  ),
 
   /* Function layer 2. Fn1 modifications.
    * ,---------------------------------------------------------------.
@@ -136,7 +136,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______ , _______ , _______ , _______ , _______ , _______ , _______ , KC_HOME , KC_PGDN , KC_END  , _______ , _______ , _______                     , KC_MPLY , \
       _______           , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______           , KC_PGUP , KC_MUTE , \
       _______           , _______ , _______ , _______                                                             , _______ , _______ , KC_HOME , KC_PGDN , KC_END  \
-      ),
+  ),
 
   /* Function layer 3. Macros, numbers.
    * ,---------------------------------------------------------------.
@@ -157,5 +157,5 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______ , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , _______ , _______                     , KC_MPRV , \
       _______           , EL_TMWP , EL_TMWN , EL_VMBP , EL_VMBN , _______ , EL_VMBW , _______ , _______ , _______ , _______ , _______           , _______ , KC_MNXT , \
       _______           , _______ , _______ , _______                                                             , _______ , _______ , _______ , _______ , _______  \
-      ),
+  ),
 };
