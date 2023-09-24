@@ -18,10 +18,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (record->event.pressed) {
     switch(keycode) {
       case EL_TMWN:
-        SEND_STRING(SS_LCTRL("b") "n");
+        SEND_STRING(SS_LCTL("b") "n");
         return false;
       case EL_TMWP:
-        SEND_STRING(SS_LCTRL("b") "p");
+        SEND_STRING(SS_LCTL("b") "p");
         return false;
       case EL_VMBN:
         SEND_STRING(":bn\n");
