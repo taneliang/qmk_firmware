@@ -14,3 +14,5 @@
 #define MK_W_INTERVAL_UNMOD 30
 #define MK_W_INTERVAL_1 10
 #define MK_W_INTERVAL_2 2
+
+#define TAPPING_TERM 100
